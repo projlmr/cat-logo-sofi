@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repostería Sofi's Cake</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="https://wa.me/56935897786" target="_blank">Whatsapp</a>
+    </nav>
+
+    <img src="img/logo.png" alt="Logo Sofi's Cake" class="logo" />
+    <h1>Sofi's Cake</h1>
+    <p class="eslogan">¡Crear pasteles es nuestra pasión, lo hacemos con mucho amor y dedicación!</p>
+    <p>Pedidos de dulces y postres artesanales</p>
+    <p>Bienvenidos a nuestra tienda de repostería, donde encontrarás deliciosos productos hechos a mano.</p>
+  </header>
+
+  <section class="catalogo">
+    <h2>Catálogo Día de la Madre</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/minitorta.jpg.png" alt="Mini torta" />
+        <h3>Mini tortas</h3>
+        <p>$7.000</p>
+      </div>
+      <div class="producto">
+        <img src="img/alfajores.png" alt="Alfajores" />
+        <h3>Cajita alfajores</h3>
+        <p>$5.000</p>
+      </div>
+      <div class="producto">
+        <img src="img/galletas.png" alt="Galletas" />
+        <h3>Galletas</h3>
+        <p>$3.000</p>
+      </div>
+      <div class="producto">
+        <img src="img/ramominidonas.png" alt="Ramo mini donas" />
+        <h3>Ramo mini donas</h3>
+        <p>$5.000</p>
+      </div>
+      <div class="producto">
+        <img src="img/delicias.png" alt="Delicias" />
+        <h3>Delicias</h3>
+        <p>$4.000</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria">
+    <h2>Trabajos anteriores</h2>
+    <div class="slider">
+      <img src="img/trabajo1.png" class="slide active" alt="Trabajo 1" />
+      <img src="img/trabajo2.png" class="slide" alt="Trabajo 2" />
+      <img src="img/trabajo3.png" class="slide" alt="Trabajo 3" />
+      <img src="img/trabajo4.png" class="slide" alt="Trabajo 4" />
+    </div>
+  </section>
+
+  <footer>
+    <p>¿Tienes alguna pregunta? Contáctanos</p>
+    <a class="boton" href="https://wa.me/56912345678" target="_blank">Contactar</a>
+  </footer>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide() {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+      index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 3000);
+  </script>
+
+</body>
+</html>

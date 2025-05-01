@@ -1,0 +1,166 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f5;
+    color: #7a3040;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background-color: #ffccd5;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: #7a3040;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: #b03a50;
+  }
+  
+  header {
+    padding: 2rem 1rem;
+    background-color: #ffe0ea;
+  }
+  
+  .logo {
+    width: 140px;
+    margin-bottom: 1rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    color: #b03a50;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0.5rem auto;
+  }
+  
+  .eslogan {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #d6336c;
+    margin-bottom: 1rem;
+  }
+  
+  .catalogo h2 {
+    margin-top: 2rem;
+    color: #b03a50;
+    font-size: 2rem;
+  }
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .producto {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .producto:hover {
+    transform: scale(1.03);
+  }
+  
+  .producto img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .producto h3 {
+    margin: 0.5rem 0 0.2rem;
+    color: #7a3040;
+  }
+  
+  .producto p {
+    margin: 0;
+    font-weight: bold;
+    color: #b03a50;
+  }
+  
+  .galeria {
+    background-color: #ffe6f0;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    text-align: center;
+  }
+  
+  .galeria h2 {
+    color: #b03a50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 740px;
+    height: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #ffccd5;
+  }
+  
+  footer p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .boton {
+    background-color: #b03a50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .boton:hover {
+    background-color: #922838;
+  }
+  
